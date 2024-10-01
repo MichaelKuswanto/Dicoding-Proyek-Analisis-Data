@@ -13,7 +13,7 @@ st.set_page_config(
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("bike_df.csv")
+    df = pd.read_csv("https://github.com/MichaelKuswanto/Dicoding-Proyek-Analisis-Data/blob/main/Dashboard/bike_df.csv")
     df['dteday'] = pd.to_datetime(df['dteday'])
     return df
 
